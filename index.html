@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Notice</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #00ff41;
+            font-family: Consolas, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            border: 2px solid #00ff41;
+            box-shadow: 0 0 25px #00ff41;
+            max-width: 800px;
+            animation: glow 2s infinite alternate;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: red;
+            text-shadow: 0 0 15px red;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        .warning {
+            color: yellow;
+            margin-top: 25px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #00ff41;
+            }
+            to {
+                box-shadow: 0 0 30px #00ff41;
+            }
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            background: #00ff41;
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>⚠ SECURITY NOTICE ⚠</h1>
+
+    <h2>You Got Hacked by <span style="color:#00ff41;">Mr. Robot</span></h2>
+
+    <p>This page is part of a cybersecurity demonstration.</p>
+    <p>If this were a real compromise, your system and data could be at risk.</p>
+
+    <p class="warning">
+        Always keep your software updated,<br>
+        use strong authentication, and perform regular security assessments.
+    </p>
+
+    <br>
+
+    <p>> Initializing security awareness...<span class="cursor"></span></p>
+
+    <div class="footer">
+        For Educational & Authorized Security Testing Only
+    </div>
+</div>
+
+</body>
+</html>
